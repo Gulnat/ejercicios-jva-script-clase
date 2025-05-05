@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio con JavaScript ej14</title>
+</head>
+<body>
+    <p>El usuario introduce números y la computadora responde sacando por pantalla los mismos números hasta que el introducido es el número 7.</p>
+    <script language="javascript">
+        {      
+            let dato;    
+            do
+            {
+                let dato=prompt('Introduce número:','0'); 
+                var num=parseInt(dato);            
+                document.write(` El numero introducido es ${num} </br> `); 
+            } while (num!==7)
+            document.write( ` </br><h2>Fin del programa. El número ya ES IGUAL a 7.</h2>`);                 
+        }
+        </script>
+</body>
+</html>
