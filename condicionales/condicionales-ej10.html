@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales ej10</title>
+</head>
+<body>
+    <p> NO PERMITIR EDADES MENORES QUE 1 AÑO NI MAYORES QUE 120 años. La computadora indica que: "Sí tiene permiso de acceso" si la edad es mayor que 18 años.</p>
+    <script>
+        let edad = parseInt(prompt("Edad?", "0"));
+    
+        while (edad > 120 || edad < 1) {
+            if (edad > 120) {
+                edad = parseInt(prompt("Demasiado grande. Introduce otra edad.", "0"));
+            } else if (edad < 1) {
+                edad = parseInt(prompt("Demasiado pequeño. Introduce otra edad.", "0"));
+            } 
+        }
+    
+        if (edad >= 18) {
+            document.write(`<h3>SÍ tienes acceso.</h3>`);
+        } else {
+            document.write(`<h3>No tienes acceso.</h3>`);
+        }
+    </script>
+    
+    
+    
+</body>
+</html>

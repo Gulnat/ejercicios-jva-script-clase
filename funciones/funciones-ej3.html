@@ -3,20 +3,16 @@
 <meta content="text/html; charset=utf-8">
 
 <script>
-
-function Calcula(numero=1)
-{
-let calculo = numero * numero; 
-document.write(`<p/> Resultado = ${calculo} </p>`);
-}
-
+    function Calcula(numero=1)
+    {
+        let calculo = numero * numero; 
+        document.write(`<p/> Resultado = ${calculo} </p>`);
+    }
 </script>
-
 </head>
 <body>
-
-<input type="button" onclick="Calcula()" value="Calculo">
-<input type="button" onclick="Calcula(5)" value="Otro Calculo ">
-
+    <input type="button" onclick="Calcula()" value="Calculo">
+    <input type="button" onclick="Calcula(5)" value="Otro Calculo ">
+    <p>Parametro número, si no recibe el valor, vale 1. Se utiliza como variable local en la función. </p>
 </body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales ej14</title>
+</head>
+<body>
+    <p>El usuario introduce el número del mes (1 al 12) y el código responde si ese mes tiene 30 o 31 dias.</p>
+    <script>
+        let mes = parseInt(prompt("Introduce el número del mes (1 al 12):", "1"));
+    
+        if (mes === 2) {
+            document.write("<h3>Febrero tiene 28 días.</h3>");
+        } else if (mes === 4 || mes === 6 || mes === 9 || mes === 11) {
+            document.write("<h3>Este mes tiene 30 días.</h3>");
+        } else if (mes >= 1 && mes <= 12) {
+            document.write("<h3>Este mes tiene 31 días.</h3>");
+        } else {
+            document.write("<h3>Mes no válido. Introduce un número del 1 al 12.</h3>");
+        }
+    </script>  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones ej10</title>
+</head>
+<title>ECMA6 alcance asignación let</title>
+<script>
+    function programa() { 
+        let x = 3;
+        function func(randomize) {
+            if (randomize) {
+                let x = parseInt(Math.random()*10); 
+                return x;
+            }
+        return x;
+        }
+    document.getElementById("salida").innerHTML = func(false); // 3 
+    document.getElementById("salida").innerHTML += func(1);
+    }
+</script>
+</head>
+<body>
+    <h3>Alcance de variables (Scope)</h3>
+    <input type="button" value="Pulsa aquí" onclick="programa()"  />
+    <div id="salida"></div>
+   <p>3 followed by a random number like 7, so output might be: 37. The let keyword ensures that the x inside the if block does not overwrite the x in the outer scope. This example illustrates how block scope helps avoid unintended variable collisions.</p> 
+</body>
+</html>
