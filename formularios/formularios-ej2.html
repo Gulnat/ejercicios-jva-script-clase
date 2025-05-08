@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularios ej4, elevar un número a cuadrado y el cubo usando una funcion</title>
+    <script>
+        function calcula()
+        {
+            let num = parseFloat(document.datos.entrada.value);
+            let resultado = (num*0.1).toFixed(2);
+            document.getElementById("respuesta").innerText = `El 10% de ${num} es ${resultado} `;
+        }
+    </script>
+</head>
+<body>
+    <form name="datos" >
+        Escribe un número:
+        <input type="number" name="entrada" />
+        <input type="button" name="B1" value="Ejecuta" onclick="calcula()" />
+    </form>
+    <p id="respuesta"></p>
+</body>
+</html>

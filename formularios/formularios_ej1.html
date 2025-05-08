@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Datos en Formularios ej1 </title>
+<p></p>
+<script>
+    function saludo()
+    {
+        let nom_usuario = document.fdatos.entrada.value;
+        document.getElementById("respuesta").innerText = `Hola ${nom_usuario}`;
+        //document.writeln(`Hola, bon dia ${nom_usuario} `); //document.writeln() reemplaza todo el contenido de la página; document.getElementById("saludo").innerText = `Hola, bon dia ${nom_usuario}`;
+    }
+</script>
+</head>
+
+<body>
+    <form name="fdatos">
+        Escribe tu nombre: <input type="text" size="10"  name="entrada"/>
+        <input type="button" value="Pulsa aquí" onclick="saludo()"  />
+    </form>
+    <p id="respuesta"></p>
+</body>
+</html>

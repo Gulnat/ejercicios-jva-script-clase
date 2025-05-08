@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularios ej3, cuantos dias faltan hasta tus cumpleaños</title>
+    <script>
+        function calcula()
+        {
+            let fecha_nac = new Date(document.datos.entrada.value);
+            let hoy = new Date();
+
+            // Crear la fecha del próximo cumpleaños (año actual)
+            let proximoCumple = new Date(hoy.getFullYear(), fecha_nac.getMonth(), fecha_nac.getDate());
+
+            // Si ya pasó el cumpleaños este año, se calcula para el año siguiente
+            if (proximoCumple < hoy) {
+                proximoCumple.setFullYear(hoy.getFullYear() + 1);
+            }
+
+            // Diferencia en milisegundos
+            let diferencia = proximoCumple - hoy;
+            // Convertir a días (1000 ms * 60 s * 60 min * 24 h)
+            let dias_faltan = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
+
+            document.getElementById("respuesta").innerText = `Faltan ${dias_faltan} días para tu próximo cumpleaños.`;
+        }
+    </script>
+</head>
+<body>
+    <form name="datos" >
+        Escribe tu fecha de nac:
+        <input type="date" name="entrada" />
+        <input type="button" name="B1" value="Ejecuta" onclick="calcula()" />
+    </form>
+    <p id="respuesta"></p>
+</body>
+</html>
