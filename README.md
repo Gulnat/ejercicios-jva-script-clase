@@ -19,35 +19,31 @@ Interactividad y lógica básica
 |   ├── bucle4.html
 |
 ├── condicionales/
-│   ├── condicionales1.html
-│   ├── condicionales2.html
-│   ├── condicionales3.html
-│   ├── condicionales4.html
-│   ├── condicionales5.html
-│   ├── condicionales6.html
-│   ├── condicionales7.html
-│   ├── condicionales8.html
-│   ├── condicionales9.html
-│   ├── condicionales10.html
-│   ├── condicionales11.html
-│   ├── condicionales12.html
-│   ├── condicionales13.html
-│   ├── condicionales14.html
-│   ├── condicionales15.html
-│   ├── condicionales16.html
-│   ├── condicionalesPrompt1.html
-│   ├── condicionalesPrompt2.html
-│   ├── condicionalesPrompt3.html
-│   └── condicionalesPrompt4.html
+│   ├── condicionales-01.html
+│   ├── condicionales-ej2.html
+│   ├── condicionales-ej3.html
+│   ├── condicionales-ej4.html
+│   ├── condicionales-ej5.html
+│   ├── condicionales-ej6.html
+│   ├── condicionales-ej7.html
+│   ├── condicionales-ej8.html
+│   ├── condicionales-ej9.html
+│   ├── condicionales-ej10.html
+│   ├── condicionales-ej11.html
+│   ├── condicionales-ej12.html
+│   ├── condicionales-ej13.html
+│   ├── condicionales-ej14.html
+│   ├── condicionales-ej15.html
+│   ├── condicionales-ej16.html
 |
 ├── formularios/
-|   ├── ejerFormulario1.html
-|   ├── form1.html
-|   ├── form2.html
-|   ├── form3.html
-|   ├── form4.html
-|   ├── form5.html
-|   ├── form6.html
+|   ├── ej1 - adivinanumero.html
+|   ├── ej2 - cambiaColor.html
+|   ├── ej3 - cumpleanos.html
+|   ├── formularios_ej1.html
+|   ├── formularios_ej2.html
+|   ├── formularios_ej3.html
+|   ├── formularios_ej4.html
 |   ├── form7.html
 |   ├── form8.html
 |   ├── form9.html
