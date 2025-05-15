@@ -1,14 +1,16 @@
 Repositorio de Ejercicios - HTML y JavaScript
 Este repositorio contiene los distintos ejercicios de HTML y JavaScript realizados en las clases. Cada ejercicio está organizado en su propia carpeta.
 
+La autora: Gulnat Pettit
+
 📚 Contenido
 Los ejercicios están diseñados para poner en práctica conceptos fundamentales como:
 
 Estructura básica de un documento HTML
 Manipulación del DOM con JavaScript
-Funciones, eventos y condicionales
+Funciones y condicionales
 Formularios y validación
-Interactividad y lógica básica
+
 📁 Estructura del repositorio
 /ejercicios-jva-script-clase
 |
@@ -36,15 +38,19 @@ Interactividad y lógica básica
 │   ├── condicionales-ej15.html
 │   ├── condicionales-ej16.html
 |
+├── DOM/
+|   ├── dom-ej1.html
+|   ├── dom-ej2.html
+|
 ├── formularios/
 |   ├── ej1 - adivinanumero.html
 |   ├── ej2 - cambiaColor.html
 |   ├── ej3 - cumpleanos.html
-|   ├── formularios_ej1.html
-|   ├── formularios_ej2.html
-|   ├── formularios_ej3.html
-|   ├── formularios_ej4.html
-|   ├── form7.html
+|   ├── formularios-ej1.html
+|   ├── formularios-ej2.html
+|   ├── formularios-ej3.html
+|   ├── formularios-ej4-parteB.html
+|   ├── formularios-ej4.html
 |   ├── form8.html
 |   ├── form9.html
 |   ├── form10.html
@@ -52,43 +58,46 @@ Interactividad y lógica básica
 |   ├── form12.html
 │   └── form13.html
 |
+|── formularios_H/
+|   ├── ejemplo1.html
+|
 ├── funciones/
-|   ├── funciones1.html
-|   ├── funciones2.html
-|   ├── funciones3.html
-|   ├── funciones4.html
-|   ├── funciones5.html
-|   ├── funciones6.html
-|   ├── funciones7.html
-|   ├── funciones8.html
-|   ├── funciones9.html
-|   ├── funciones10.html
-|   ├── funciones11.html
-│   └── funciones12.html
+|   ├── fnciones-ej9.html
+|   ├── funciones-ej1.html
+|   ├── funciones-ej3.html
+|   ├── funciones-ej4.html
+|   ├── funciones-ej5.html
+|   ├── funciones-ej6.html
+|   ├── funciones-ej7.html
+|   ├── funciones-ej8.html
+|   ├── funciones-ej9.html
+|   ├── funciones-ej10.html
+|   ├── funciones-ej11.html
+│   └── funciones-ej12.html
+|
+├── ingles_40lessons/
+|   ├── ej1-frend-formulario.html
+|   ├── index.html
+|   ├── ingles-ej2.html
+|   ├── ingles-ej3.html
 |
 ├── inicio/
-|   ├── iniciacion1.html
-|   ├── iniciacion2.html
-|   ├── iniciacion3.html
-|   ├── iniciacion4.html
-|   ├── iniciacion5.html
-|   ├── iniciacion6.html
-|   ├── iniciacion7.html
-|   ├── iniciacion8.html
-|   ├── iniciacion9.html
-|   ├── iniciacion10.html
-|   ├── iniciacion11.html
-|   ├── iniciacion12.html
-|   ├── iniciacion13.html
-│   └── iniciacion14.html
+|   ├── inicio-ej1.html
+|   ├── inicio-ej2.html
+|   ├── inicio-ej3.html
+|   ├── inicio-ej4.html
+|   ├── inicio-ej5.html
+|   ├── inicio-ej6.html
+|   ├── inicio-ej7.html
+|   ├── inicio-ej8.html
+|   ├── inicio-ej9.html
+|   ├── inicio-ej10.html
+|   ├── inicio-ej11.html
+|   ├── inicio-ej12.html
+|   ├── inicio-ej13.html
+│   └── inicio-ej14.html
+│   └── inicio-ejParse.html
 |
-├── resumen/
-|   ├── resumen1.html
-|   ├── resumen2.html
-|   ├── resumen3.html
-|   ├── resumen4.html
-│   └── resumen5.html
-|
-└── readme.md
-...
+└── README.md
+
 Cada carpeta incluye los archivos necesarios para ejecutar el ejercicio directamente en el navegador.
