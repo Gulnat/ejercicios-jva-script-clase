@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script> 
+    function cargarImg(){
+        //crear imagen 
+        var destino= document.getElementById("imagen"); 
+        if (destino == undefined) 
+            alert("No existe el bloque destino")
+        else{
+            var nodoImg = document.createElement("img"); 
+            nodoImg.setAttribute("src",
+            "https://aulascript.com/imgs/programa.jpg");
+            destino.appendChild(nodoImg);
+        } 
+        } 
+    </script>
+
+    <body onload="cargarImg()"> 
+        <p>Página del ejemplo de crear nodo de Imagen</p> 
+        <div id="imagen"></div> 
+    </body>
+
+        <script> 
+        function borraNodo(nombre){ 
+            //Buscar el nodo 
+            var nodo = document.getElementById(nombre); 
+            //borrar el nodo 
+            nodo.remove() 
+        } 
+    </script>
+    <body> 
+        <img src="imagenes/programa.jpg" id="muestra"> 
+        <p> 
+            <a href="#" onclick="borraNodo('muestra')">borrar 
+        imagen</a> 
+        </p> 
+    </body>
+
+</body>
+</html>

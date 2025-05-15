@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="encuesta1" method="get" action="/">
+        <p>Elige cual es tu app favorita:</p>
+        <input type="radio" id="notepad" name="app" value="Notepad++">
+        <label for="notepad">Notepad++</label><br>
+        <input type="radio" id="brackets" name="app" value="Brackets">
+        <label for="brackets">Brackets</label><br>
+        <input type="radio" id="visual-estudio" name="app" value="Visual Studio">
+        <label for="visual-estudio">Visual Studio</label><br>
+    </form>
+    <form name="encuesta2" method="get" action="/">
+        <p>Elige cuales son tus app favoritas:</p>
+        <input type="checkbox" id="notepad" name="app" value="Notepad++">
+        <label for="notepad">Notepad++</label><br>
+        <input type="checkbox" id="brackets" name="app" value="Brackets">
+        <label for="brackets">Brackets</label><br>
+        <input type="checkbox" id="visual-estudio" name="app" value="Visual Studio">
+        <label for="visual-estudio">Visual Studio</label><br>
+    </form>
+
+    <p>Algunos ejemplos</p>
+    <form name="ingresar" method="get" action="prodesar.php">
+        <label for="nombre">Nombre del usuario</label>
+        <input type="text" id="usuario" name="usuario">
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="text" id="password" name="password">
+        <input type="hidden" id="idioma" name="idioma">
+    </form>
+    <script>
+        document.getElementById("idioma"),value= 
+        window.navigator.language;
+    </script>
+
+    <p>Atributo type con valor FILE</p>
+    <form action="/gestiona.php">
+        <label for="archivo">Selecciona uno o varios archivos</label>
+        <input type="file" id="archivo" name="archivo" multiple><br>
+        <input type="submit" value="Subir archivo">
+        <input type="submit" value="Enviar"><br>
+        <input type="image" src="img/click.png">
+        <input type="reset" value="Limpiar formulario">
+    </form>
+
+    <p>Textarea</p>
+    <form>
+        <textarea name="textarea" rows="10" cols="50">ESte texto puedes cambiarlo</textarea>
+    </form>
+
+    <p>SELECT</p>
+    <form>
+        <select name="provincias" id="provincias" multiple>
+           <option value="almeria">Almeria</option>
+           <option value="cadiz">Cadiz</option>
+           <option value="cordoba">Cordoba</option>
+        </select>
+    </form>
+
+    <p>Input type SEARCH</p>
+    <form>
+        <label for="buscar">Buscar</label>
+        <input id="buscar" name="buscar" type="search">
+    </form>
+
+    <p> TEl, EMAIL, URL</p>
+    <form>
+        <label for="correo">Correo electronico</label>
+        <input id="correo" name="correo" type="email"><br>
+        <label for="web">Sitio web</label>
+        <input id="web" name="web" type="url"><br>
+        <label for="tele">Telefono</label>
+        <input id="tel" name="tel" type="tel"><br>
+    </form>
+
+    <p>RANGE</p>
+    <form>
+        <label for="rango">Valores</label>
+        <input type="range" min="0" max="20" step="2" name="rango" id="rango"><br>
+        <input type="number" id="numero" name="numero"><br>
+    </form>
+    <script>
+        const rango=document.getElementById("rango")
+        const numero=document.getElementById("numero")
+        rango.onchange = function() {
+            numero.value = rango.value;
+        }
+    </script>
+
+    <p>DATE</p>
+    <form>
+        <label for="fecha">Fecha: </label>
+        <input id="fecha" name="fecha" type="date">
+        <br><br>
+        <label for="fechayhora">Fecha y hora: </label>
+        <input id="fechayhora" name="fechayhora" type="datetime">
+        <br><br>
+        <label for="fechayhoralocal">Fecha y hora local: </label>
+        <input id="fechayhoralocal" name="fecha" type="datetime-local">
+        <br><br>
+        <label for="hora">Hora: </label>
+        <input id="hora" name="hora" type="time">
+        <br><br>
+        <label for="mes">Mes: </label>
+        <input id="mes" name="mes" type="month">
+        <br><br>
+    </form>
+
+    <p>COLOR</p>
+    <form>
+        <label for="colorfd">Elegir color del fondo</label>
+        <input id="colorfd" name="colorfd" type="color">
+    </form>
+</body>
+</html>

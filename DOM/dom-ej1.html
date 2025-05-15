@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> function crear(){
+        //crear title 
+        var nodoTitle = document.createElement("title"); 
+        var txtTitle = document.createTextNode("Mi página dinámica"); 
+        nodoTitle.appendChild(txtTitle); 
+        document.head.appendChild(nodoTitle); 
+        //Crear la cabecera h1 
+        var titularH1 = document.createElement("h1"); 
+        var txtTitular= document.createTextNode("Página creada on line");
+        titularH1.appendChild(txtTitular); 
+        document.body.appendChild(titularH1); 
+        //Crear el párrafo 
+        var parrafoCur = document.createElement("p"); 
+        parrafoCur.setAttribute("style", "font-style: italic"); 
+        var txtParrafo = document.createTextNode("Ese es el contenido de mi párrafo. Está puesto en cursiva"); 
+        parrafoCur.appendChild(txtParrafo); 
+        document.body.appendChild(parrafoCur); 
+    } 
+    </script> 
+    <!-- En el cuerpo de la página colocamos la llamada a la función, en este caso con un evento load --> 
+    <body onload="crear()"> Los nodos creados por Javascript aparecen en la página </body>
+    
+</body>
+</html>
